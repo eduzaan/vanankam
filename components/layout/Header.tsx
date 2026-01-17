@@ -1,12 +1,11 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
+import { NAV_LINKS, SITE_CONFIG, SOCIAL_LINKS } from '@/lib/constants'
+import { AnimatePresence, motion, useScroll, useTransform } from 'framer-motion'
+import { Phone } from 'lucide-react'
 import Image from 'next/image'
-import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
-import { Menu, X, Phone, Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react'
-import { cn } from '@/lib/utils'
-import { NAV_LINKS, SOCIAL_LINKS, SITE_CONFIG } from '@/lib/constants'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
