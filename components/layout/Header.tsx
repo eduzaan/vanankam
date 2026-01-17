@@ -119,6 +119,7 @@ export default function Header() {
                   src="/images/circle-logo.png"
                   alt="Vanankam Logo"
                   fill
+                  sizes="48px"
                   className="object-contain"
                   priority
                 />
