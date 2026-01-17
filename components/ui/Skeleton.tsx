@@ -1,5 +1,6 @@
-import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
+import React from 'react'
 
 export default function Skeleton({ className = '' }: { className?: string }) {
   return (
@@ -65,19 +66,17 @@ export function ImageWithSkeleton({
       {isLoading && (
         <Skeleton className="absolute inset-0 z-10" />
       )}
-      <motion.img
+      <Image
         src={src}
         alt={alt}
         width={fill ? undefined : width}
         height={fill ? undefined : height}
-        className={`${fill ? 'object-cover' : ''} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
-        style={fill ? { width: '100%', height: '100%' } : undefined}
-        loading={priority ? 'eager' : 'lazy'}
+        fill={fill}
+        className={`${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
+        priority={priority}
+        sizes={sizes}
         onLoad={handleLoad}
         onError={handleError}
-        initial={{ scale: 0.95, opacity: 0 }}
-        animate={isLoading ? { scale: 0.95, opacity: 0 } : { scale: 1, opacity: 1 }}
-        transition={{ duration: 0.3 }}
       />
     </div>
   )

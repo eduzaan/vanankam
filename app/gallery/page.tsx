@@ -1,12 +1,12 @@
 'use client'
 
-import { useState } from 'react'
-import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 import HeroBanner from '@/components/ui/HeroBanner'
-import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { ImageWithSkeleton } from '@/components/ui/Skeleton'
+import { AnimatePresence, motion } from 'framer-motion'
+import { ChevronLeft, ChevronRight, X } from 'lucide-react'
+import Image from 'next/image'
+import { useState } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 const galleryCategories = ['All', 'Outlets', 'Beverages', 'Events', 'Team', 'Kulhads', 'Products']
 
@@ -116,6 +116,7 @@ export default function GalleryPage() {
                       src={image.image}
                       alt={image.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>

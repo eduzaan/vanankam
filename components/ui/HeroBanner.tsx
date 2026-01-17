@@ -1,9 +1,9 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
-import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import Image from 'next/image'
+import React, { useEffect, useState } from 'react'
 
 interface HeroBannerProps {
   images: string[]
@@ -57,6 +57,7 @@ export default function HeroBanner({
               src={images[currentIndex]}
               alt={`Banner ${currentIndex + 1}`}
               fill
+              sizes="100vw"
               className="object-cover brightness-[0.3]"
               priority={currentIndex === 0}
             />
