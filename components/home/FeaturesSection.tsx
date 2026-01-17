@@ -69,7 +69,7 @@ export default function FeaturesSection() {
       <div 
         className="absolute inset-0 z-0 opacity-5"
         style={{
-          backgroundImage: 'url(/public/images/teaea_counter_bg.png)',
+          backgroundImage: 'url(/images/teaea_counter_bg.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}

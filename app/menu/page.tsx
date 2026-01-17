@@ -59,9 +59,9 @@ export default function MenuPage() {
       {/* Hero Section */}
       <HeroBanner
         images={[
-          '/public/images/pouring-tea-into-clay-cups.jpg',
-          '/public/images/bff4bd6e-ee5a-422a-adbf-67a70f3637a0.jpg',
-          '/public/images/pexels-pitamaas-575428118-16942970.jpg',
+          '/images/pouring-tea-into-clay-cups.jpg',
+          '/images/bff4bd6e-ee5a-422a-adbf-67a70f3637a0.jpg',
+          '/images/pexels-pitamaas-575428118-16942970.jpg',
         ]}
         title={<>Our <span className="text-accent">Menu</span></>}
         description="Explore our delicious range of traditional and innovative chai blends, refreshing beverages, and mouth-watering snacks"

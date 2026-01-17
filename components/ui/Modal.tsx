@@ -23,7 +23,7 @@ export default function Modal({
           aria-label="Close modal"
         >
           <Image
-            src="/public/images/close-white.png"
+            src="/images/close-white.png"
             alt="Close"
             width={24}
             height={24}
