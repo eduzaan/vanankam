@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2D3748;
+  --primary-dark: #1A202C;
+  --accent: #F6C000;
+  --accent-dark: #D4A600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #E8F4F8 0%, #FCE4EC 50%, #E8F4F8 100%);
+  min-height: 100vh;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-4xl md:text-5xl font-heading font-bold text-primary-dark text-center uppercase tracking-wide;
+  }
+
+  .section-subtitle {
+    @apply text-lg md:text-xl text-primary font-medium text-center max-w-4xl mx-auto mt-4;
+  }
+
+  .btn-primary {
+    @apply bg-accent hover:bg-accent-dark text-primary-dark font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-primary-dark hover:bg-primary text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(180deg, #E8F4F8 0%, #FCE4EC 100%);
+  }
+
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-md;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Steam animation for kulhad */
+.steam {
+  position: absolute;
+  width: 8px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  filter: blur(3px);
+  animation: steam 2s ease-in-out infinite;
+}
+
+.steam:nth-child(2) {
+  animation-delay: 0.5s;
+  left: 15px;
+}
+
+.steam:nth-child(3) {
+  animation-delay: 1s;
+  left: 30px;
+}
