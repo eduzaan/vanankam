@@ -1,44 +1,44 @@
 'use client'
 
+import { ImageWithSkeleton } from '@/components/ui/Skeleton'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { ImageWithSkeleton } from '@/components/ui/Skeleton'
 
 const benefits = [
   {
     title: 'Premium Quality',
     description: 'Finest tea leaves and authentic spices for superior taste',
-    image: '/images/premium-quality-21072512420290.png',
+    image: '/public/images/premium-quality-21072512420290.png',
     badge: '⭐ Quality First'
   },
   {
     title: 'Budget Friendly',
     description: 'Affordable pricing without compromising quality',
-    image: '/images/budget-friendly-menu-2107251246098.png',
+    image: '/public/images/budget-friendly-menu-2107251246098.png',
     badge: '💰 Affordable'
   },
   {
     title: 'High ROI',
     description: 'Low investment with high return potential',
-    image: '/images/low-cost-high-return-21072512452952.png',
+    image: '/public/images/low-cost-high-return-21072512452952.png',
     badge: '📈 Profitable'
   },
   {
     title: 'Quick Service',
     description: 'Chef-less kitchen model for faster operations',
-    image: '/images/chef-less-kitchen-21072512442882.png',
+    image: '/public/images/chef-less-kitchen-21072512442882.png',
     badge: '⚡ Fast Setup'
   },
   {
     title: 'No Royalty',
     description: 'Keep more profits without recurring royalty fees',
-    image: '/images/no-royalty-21072512322920.png',
+    image: '/public/images/no-royalty-21072512322920.png',
     badge: '✅ No Royalty'
   },
   {
     title: '24/7 Support',
     description: 'Round-the-clock technical and operational support',
-    image: '/images/tech-support-system-21072512464098.png',
+    image: '/public/images/tech-support-system-21072512464098.png',
     badge: '🛠️ Always Ready'
   }
 ]

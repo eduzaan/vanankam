@@ -115,7 +115,7 @@ export default function Header() {
                 className="relative w-10 md:w-12 h-10 md:h-12 flex-shrink-0"
               >
                 <Image
-                  src="/images/circle-logo.png"
+                  src="/public/images/circle-logo.png"
                   alt="Vanankam Logo"
                   fill
                   sizes="48px"

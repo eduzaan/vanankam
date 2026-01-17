@@ -1,10 +1,10 @@
 'use client'
 
-import React, { useState } from 'react'
-import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 import HeroBanner from '@/components/ui/HeroBanner'
+import { AnimatePresence, motion } from 'framer-motion'
+import Image from 'next/image'
+import { useState } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 const categories = [
   { id: 'hot', name: 'Hot Beverages', icon: '☕' },
@@ -59,9 +59,9 @@ export default function MenuPage() {
       {/* Hero Section */}
       <HeroBanner
         images={[
-          '/images/pouring-tea-into-clay-cups.jpg',
-          '/images/bff4bd6e-ee5a-422a-adbf-67a70f3637a0.jpg',
-          '/images/pexels-pitamaas-575428118-16942970.jpg',
+          '/public/images/pouring-tea-into-clay-cups.jpg',
+          '/public/images/bff4bd6e-ee5a-422a-adbf-67a70f3637a0.jpg',
+          '/public/images/pexels-pitamaas-575428118-16942970.jpg',
         ]}
         title={<>Our <span className="text-accent">Menu</span></>}
         description="Explore our delicious range of traditional and innovative chai blends, refreshing beverages, and mouth-watering snacks"

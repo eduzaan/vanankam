@@ -1,6 +1,6 @@
 "use client"
-import React from 'react'
 import Image from 'next/image'
+import React from 'react'
 
 export default function Modal({
   isOpen,
@@ -23,7 +23,7 @@ export default function Modal({
           aria-label="Close modal"
         >
           <Image
-            src="/images/close-white.png"
+            src="/public/images/close-white.png"
             alt="Close"
             width={24}
             height={24}
